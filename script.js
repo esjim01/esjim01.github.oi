@@ -1,5 +1,5 @@
 function downloadPDF() {
-    const element = document.querySelector('.container-lg');
+    const element = document.querySelector('.container-lg');// Selecciona el elemento que se va a convertir en PDF
 
     const opt = {
         margin: [2, 5, 1 , 5],  // [arriba, izquierda, abajo, derecha] en mm
