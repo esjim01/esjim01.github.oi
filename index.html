@@ -1,43 +1,151 @@
 <!DOCTYPE html>
-<html lang="es"></html> 
-<head> 
-    <meta charset="UTF-8"><!--Esta línea define la codificación de caracteres del documento. -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> Esta línea asegura que el diseño sea responsivo en dispositivos móviles.
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"> Esta línea establece la compatibilidad con versiones anteriores de Internet Explorer.
-    <link rel="icon" href="favicon.ico" type="image/x-icon"> Esta línea define el icono del sitio web que se muestra en la pestaña del navegador.
-    <title>Curriculum</title>   <!-- Esta línea define el título de la página que se muestra en la pestaña del navegador. -->
-    <link rel="stylesheet" href="styles.css"> <!-- Esta línea enlaza el archivo CSS externo para aplicar estilos a la página. -->
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <!--Esta línea define la codificación de caracteres del documento. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Esta línea asegura que el diseño sea responsivo en dispositivos móviles.-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--Esta línea establece la compatibilidad con versiones anteriores de Internet Explorer.-->
+    <title>Curriculum</title>
+    <!-- Esta línea define el título de la página que se muestra en la pestaña del navegador. -->
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Esta línea enlaza el archivo CSS externo para aplicar estilos a la página. -->
+  </head>
+  <body>
+    <div class="container-lg">
+      <div class="row shadow-lg rounded-4 overflow-hidden">
+        <!-- Columna de la izquierda -->
+        <div class="col-md-4 bg-primary text-white p-4">
+          <header class="text-center mb-1">
+            <img
+              src="img/Foto.jpg"
+              alt="Foto de perfil"
+              class="img-fluid rounded-circle border border-4 border-white mb-3"
+            />
+            <h1 class="fw-bold mb-1">Eduar Stiven Jimenez Arias</h1>
+            <h2 class="h5">Consultor Analytics</h2>
+          </header>
+          <!-- Seccion para contacto-->
+          <section class="mb-4">
+            <h5 class="fw-bold">
+              <i class="fa-solid fa-address-card mb-3 me-3"></i>
+              Contacto
+            </h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a
+                  href="https://wa.me/573177137379?text=Hola%20te%20voy%20a%20contratar%20ya"
+                  class="text-white"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-whatsapp me-2"></i>
+                  +57 3177137379
+                </a>
+              </li>
+              <li class="mb-2 print">
+                <i class="fas fa-envelope me-2"></i>
+                eduar.jimenez45164@ucaldas.edu.co
+              </li>
+              <li class="mb-2">
+                <i class="fas fa-map-marker-alt me-2"></i>
+                Manizales, Caldas
+              </li>
+              <li class="mb-2">
+                <i class="fab fa-linkedin me-2"></i>
+                linkedin.com/julianbuitrago
+              </li>
+              <li class="mb-2 print">
+                <a
+                  href="https://github.com/juliandavidbuitrago"
+                  target="_blank"
+                  class="text-white"
+                >
+                  <i class="fab fa-github me-2"></i>
+                  github.com/JulianDavidBuitrago
+                </a>
+              </li>
+            </ul>
+          </section>
+          <hr><!-- Agrega una linea de division -->
 
-</head>
-<body>
-    <header>
-        <h1>Curriculum</h1>
-    </header>
-    <button class="estilo-lindo">Enviar👍</button>
-    <nav>
-        <ul>
-            <li><a href="#home">Inicio</a></li>
-            <li><a href="#about">Acerca de</a></li>
-            <li><a href="#contact">Contacto</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section id="home">
-            <h2>Inicio</h2>
-            <p>Esta es la sección de inicio.</p>
-        </section>
-        <section id="about">
-            <h2>Acerca de</h2>
-            <p>Información sobre nosotros.</p>
-        </section>
-        <section id="contact">
-            <h2>Contacto</h2>
-            <p>Cómo ponerse en contacto con nosotros.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 La Información aqui consignada es personal</p>
-    </footer>
-    <script src="script.js"></script>
-</body>
+          <!-- Habilidades -->
+          <section class="mb-2">
+            <h5 class="fw-bold mb-3">
+              <i class="fas fa-code me-2"></i>
+              Habilidades
+            </h5>
+            <div class="skill mb-2">
+                <div class="d-flex justify-content-between">
+                    <span >Trabajo en equipo</span>
+                    <span>98%</span>
+                </div>
+                <div class="progress" style="height: 10px;">
+                    <div
+                        class="progress-bar bg-success"
+                        role="progressbar"
+                        style="width: 98%"
+                        aria-valuenow="98"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                    ></div>
+                </div>                
+            </div>
+            <div class="skill mb-2">
+                <div class="d-flex justify-content-between">
+                    <span >Google Looker Studio</span>
+                    <span>90%</span>
+                </div>
+                <div class="progress" style="height: 10px;">
+                    <div
+                        class="progress-bar bg-success"
+                        role="progressbar"
+                        style="width: 90%"
+                        aria-valuenow="90"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                    ></div>
+                </div>                
+            </div>
+            <div class="skill mb-2">
+                <div class="d-flex justify-content-between">
+                    <span >Google Analitycs</span>
+                    <span>90%</span>
+                </div>
+                <div class="progress" style="height: 10px;">
+                    <div
+                        class="progress-bar bg-success"
+                        role="progressbar"
+                        style="width: 90%"
+                        aria-valuenow="90"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                    ></div>
+                </div>                
+            </div>
+
+                
+
+          </section>
+        </div>
+
+        <!--Columna derecha-->
+      </div>
+    </div>
+  </body>
 </html>
