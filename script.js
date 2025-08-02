@@ -1,8 +1,9 @@
+
 function downloadPDF() {
     const element = document.querySelector('.container-lg');// Selecciona el elemento que se va a convertir en PDF
 
     const opt = {
-        margin: [2, 5, 1 , 5],  // [arriba, izquierda, abajo, derecha] en mm
+        margin: [0, 0, 0 , 0],  // [arriba, izquierda, abajo, derecha] en mm
         filename: 'Curriculum_vitae_Stiven_jimenez.pdf', // Nombre del archivo
         image: { type: 'jpeg', quality: 0.98 }, // Configuración de la imagen
         html2canvas: { // Configuración de html2canvas
