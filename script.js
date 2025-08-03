@@ -14,7 +14,7 @@ function downloadPDF() {
         },
         jsPDF: {
             unit: 'mm', // Unidad de medida
-            format: 'a4', // Formato del PDF
+            format: 'a3', // Formato del PDF
             orientation: 'portrait'// Orientación del PDF
         }
     };
